@@ -2,6 +2,7 @@ application/config/production/config.php
 application/config/production/database.php
 
 application/config/config.php
+application/config/email.php
 application/config/database.php
 application/logs/*
 application/logs/
