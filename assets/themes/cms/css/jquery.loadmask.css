@@ -1,0 +1,45 @@
+.loadmask {
+    background-color: #000;
+    height: 98%;
+    left:0px;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    border-radius:4px;
+}
+.loadmask-msg {
+    background: #c3daf9 none repeat scroll 0 0;
+    border: 1px solid #6593cf;
+    left: 0;
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    z-index: 20001;
+}
+.loadmask-msg div {
+    background: #fbfbfb url("../images/loading.gif") no-repeat scroll 5px 3px;
+    border: 1px solid #a3bad9;
+    color: #222;
+    cursor: wait;
+    font-style: italic !important;
+    font-weight: bold !important;
+    font: 11px tahoma,arial,helvetica,sans-serif;
+    padding: 5px 10px 5px 25px;
+}
+.masked {
+    overflow: hidden !important;
+}
+.masked-relative {
+    position: relative !important;
+}
+.masked-hidden {
+    visibility: hidden !important;
+}
+/*pagination*/
+ul.pagination li.current a{
+    background-color: rgb(60, 141, 188);
+    border-color: rgb(60, 141, 188);
+    color: #fff;
+}

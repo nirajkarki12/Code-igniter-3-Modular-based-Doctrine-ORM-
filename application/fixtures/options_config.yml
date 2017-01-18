@@ -1,0 +1,9 @@
+options:
+    initial_data: '1'
+    widgets: ''
+    site_maintenance: '0'
+    site_maintenance_resume_after: ''
+    site_maintenance_resume: ''
+    site_title: 'CMS'
+    slug: 'CMS'
+    offset: '100'

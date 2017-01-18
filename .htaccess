@@ -1,0 +1,21 @@
+#Action application/x-hg-php53 /cgi-sys/php53
+#AddType application/x-httpd-php53 .php
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond $1 !^(index\.php|robots\.txt|blog|assets|test\.php)
+RewriteRule ^(.*) index.php/$1 [L]
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} \.(bmp|jpeg|jpg|gif|png)$ [NC]
+RewriteCond %{REQUEST_URI} !assets/themes/cms/images
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^.]+)/([^.]+\.(bmp|jpeg|jpg|gif|png))$ assets/themes/cms/images/$2 [L]
+
+<FilesMatch "^\.(ico|jpg|jpeg|png|gif|js|css|swf)$">
+# Header set Cache-Control "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+# Header set Pragma "no-cache"
+</FilesMatch> 

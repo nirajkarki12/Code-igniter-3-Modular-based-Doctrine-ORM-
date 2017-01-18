@@ -1,0 +1,44 @@
+body{
+    font-size:13px;
+}
+table{
+    margin:0;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+.container{
+    width: 700px;
+}
+.container img{
+    margin-left:140px;
+    width:340px;
+}
+.header p{
+    margin: 2px 0;
+    font-weight: bold;
+}
+.clear{
+    clear: both;
+}
+.content p{
+    line-height: 19px;
+    text-align: justify;
+}
+.content p span{
+    margin-top: 10px;
+    display: block;
+}
+.textleft th{
+    text-align: left;
+}
+p.red{
+    background: #DA251C;
+    color: #FFFAF9;
+    font-size: 14px;
+    padding:2px 2px 1px;
+    font-style: italic;
+    font-weight:bold;
+}
+.footer p{
+    margin: 0;
+}
